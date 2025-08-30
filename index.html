@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Playground</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  </head>
+  <body>
+    <header class="topbar">
+      <h1 class="title">JavaScript Playground</h1>
+      <div class="actions">
+        <button id="runBtn" class="btn primary">Run ▶</button>
+        <button id="clearBtn" class="btn">Clear Console</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="pane editor-pane">
+        <div id="editor"></div>
+      </section>
+      <section class="pane console-pane">
+        <div class="console-header">Console</div>
+        <pre id="console" class="console"></pre>
+      </section>
+    </main>
+
+    <!-- Monaco AMD loader -->
+    <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.49.0/min/vs/loader.js"></script>
+    <script src="./app.js"></script>
+  </body>
+  </html>
+
